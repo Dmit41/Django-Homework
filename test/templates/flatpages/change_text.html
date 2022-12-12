@@ -1,0 +1,16 @@
+{% extends 'flatpages/default.html' %}
+ 
+{% block title %}
+{{ flatpage.title }}
+{% endblock title %}
+ 
+{% block content %}
+<p>Здесь постоянно меняются
+    <span style="color: #ff0000;">цвета&nbsp;</span>и
+    <span style="text-decoration: underline;"><strong><em>шрифты.</em></strong></span></p>
+<h2>А так же размеры текста.</h2>
+<hr>
+<span style="color: #ff0000;">{{ flatpage.content }}&nbsp;</span>
+<span style="text-decoration: underline;"><strong><em>{{ flatpage.content }}</em></strong></span></p>
+<h2>{{ flatpage.content }}</h2>
+{% endblock content %}
